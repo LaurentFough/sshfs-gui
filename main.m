@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
-	unlink( [[@"~/Library/Preferences/org.YNProducts.SSHFS-GUI.plist" stringByExpandingTildeInPath] UTF8String] );
+	unlink( [[@"~/Library/Preferences/net.loff.SSHFS-GUI.plist" stringByExpandingTildeInPath] UTF8String] );
 	
 	[pool release];
 	

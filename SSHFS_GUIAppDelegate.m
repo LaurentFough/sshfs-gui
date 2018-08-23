@@ -149,7 +149,7 @@
 		
 		if( [mng fileExistsAtPath:@"/Library/Frameworks/MacFUSE.framework"] )
 		{
-			[def setObject:@"Bundled MacFUSE" forKey:@"implementation"];
+			[def setObject:@"Bundled FUSE for macOS" forKey:@"implementation"];
 		}
 		else if( [mng fileExistsAtPath:@"/usr/local/bin/sshfs"] )
 		{
@@ -331,11 +331,11 @@
 			}else
 			{
 #ifndef RELEASE
-				NSString *errmsg = (NSString*)SecCopyErrorMessageString(retVal, NULL);
+                NSString *errmsg = (NSString*)CFBridgingRelease(SecCopyErrorMessageString(retVal, NULL));
 				
 				NSLog(@"Could not fetch info from KeyChain, recieved code %d with following explanation: %@", retVal, errmsg);
 				
-				[errmsg release];
+				//[errmsg release];
 #endif
 				
 				[password setStringValue:@""];
@@ -400,13 +400,13 @@
 
 - (IBAction)showAboutPanel:(id)sender
 {
-	const char *credits_html = "<div style='font-family: \"Lucida Grande\"; font-size: 10px;' align='center'>Project is located at <br><a href='https://github.com/dstuecken/sshfs-gui'>https://github.com/dstuecken/sshfs-gui</a></div>";
+	const char *credits_html = "<div style='font-family: \"San Francisco Display\"; font-size: 10px;' align='center'>Project is located at <br><a href='https://github.com/LaurentFough/sshfs-gui'>https://github.com/LaurentFough/sshfs-gui</a></div>";
 	
 	NSData *HTML = [[NSData alloc] initWithBytes:credits_html length:strlen(credits_html)];
 	NSAttributedString *credits = [[NSAttributedString alloc] initWithHTML:HTML documentAttributes:NULL];
 	
 	
-	NSString *version = @"1.3.1";
+	NSString *version = @"1.3.2";
 	NSString *applicationVersion = [NSString stringWithFormat:@"Version %@", version];
 	
 	NSArray *keys = [NSArray arrayWithObjects:@"Credits", @"Version", @"ApplicationVersion", nil];
@@ -503,12 +503,12 @@
 			return [NSString stringWithFormat:@"%@ -p %d %@ '%@@%@:%@' '%@'", sshfsPath, intPort, cmdlnOpt, log, srv, remote_dir, mnt_loc];
 			break;
 		case IMPLEMENTATION_CUSTOM:
-			if ([sshfsPath isEqualToString:@""] || sshfsPath == nil)
+			if ( [sshfsPath isEqualToString:@""] || sshfsPath == nil )
 			{
 				sshfsPath = @"sshfs";
 			}
 			
-			return [NSString stringWithFormat:@"%@ '%@@%@:%@' '%@' -p %d %@ -o workaround=nonodelay -ovolname='%@@%@' -oNumberOfPasswordPrompts=1 -o transform_symlinks -o idmap=user %@ >%s 2>&1", sshfsPath, log, srv, remote_dir, mnt_loc, intPort, cmdlnOpt, log, srv, compression ? @" -C" : @"", ERR_TMPFILE];
+			return [NSString stringWithFormat:@"%@ '%@@%@:%@' '%@' -p %d %@ -o allow_other,defer_permissions -o volname='%@@%@' -o NumberOfPasswordPrompts=1 -o transform_symlinks -o idmap=user %@ >%s 2>&1", sshfsPath, log, srv, remote_dir, mnt_loc, intPort, cmdlnOpt, log, srv, compression ? @" -C" : @"", ERR_TMPFILE];
 		case IMPLEMENTATION_BUNDLED:
 			chdir( [[[NSBundle mainBundle] bundlePath] UTF8String] );
 			return [NSString stringWithFormat:@"%@ '%@@%@:%@' '%@' -p %d %@ -o workaround=nonodelay -ovolname='%@@%@' -oNumberOfPasswordPrompts=1 -o transform_symlinks -o idmap=user %@", sshfsPath, log, srv, remote_dir, mnt_loc, intPort, cmdlnOpt, log, srv, compression ? @" -C" : @""];
@@ -524,7 +524,7 @@
 	compression = [def boolForKey:@"compression"];
 	useKeychain = [def boolForKey:@"useKeychain"];
 	
-	if( [[def stringForKey:@"implementation"] isEqualToString:@"Bundled MacFUSE"] )
+	if( [[def stringForKey:@"implementation"] isEqualToString:@"Bundled FUSE for macOS"] )
 	{
 		implementation = IMPLEMENTATION_BUNDLED;
 		sshfsPath = @"./Contents/Resources/sshfs-static-leopard";
@@ -652,7 +652,7 @@
 	{
 		NSAlert *alert = [[NSAlert alloc]init];
 		[alert setAlertStyle:NSCriticalAlertStyle];
-		[alert setMessageText:[NSString stringWithFormat:@"You have already mounted this volume under \"%@\". Unmount it first, please!", [localDirectory stringValue]]];
+		[alert setMessageText:[NSString stringWithFormat:@"You have already mounted this volume under \"%@\". Unmount it first, please!.", [localDirectory stringValue]]];
 		[alert addButtonWithTitle:@"OK"];
 		
 		//long response =
@@ -786,11 +786,11 @@
 			if(retVal != 0)
 			{
 		
-				NSString *errmsg = (NSString*)SecCopyErrorMessageString(retVal, NULL);
+                NSString *errmsg = (NSString*)CFBridgingRelease(SecCopyErrorMessageString(retVal, NULL));
 				
 				NSLog(@"Could not store info to KeyChain, recieved code %d with following explanation: %@", retVal, errmsg);
 				
-				[errmsg release];
+				//[errmsg release];
 
 				
 			}
@@ -803,7 +803,7 @@
 	}
 	else if(opcode != SIGTERM && !shouldSkipConnectionError) // if error code is SIGTERM, this means our app killed the process by ourselves (look at stopButtonClicked: code)
 	{
-		NSAlert *alert = [NSAlert alertWithMessageText:@"Could not connect" defaultButton:nil alternateButton:nil otherButton:nil informativeTextWithFormat:errorText];
+        NSAlert *alert = [NSAlert alertWithMessageText:@"Could not connect" defaultButton:nil alternateButton:nil otherButton:nil informativeTextWithFormat:@"%@", errorText];
 		
 		[alert runModal];
 		

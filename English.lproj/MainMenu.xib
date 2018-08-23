@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
-        <capability name="box content view" minToolsVersion="7.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.3.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -305,6 +305,7 @@
                     </menu>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="628" y="174"/>
         </menu>
         <window title="SSHFS GUI" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
@@ -362,7 +363,7 @@ DQ
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="hostname" drawsBackground="YES" id="543">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
@@ -375,7 +376,7 @@ DQ
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="root" drawsBackground="YES" id="545">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
@@ -388,7 +389,7 @@ DQ
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="547">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             <allowedInputSourceLocales>
                                 <string>NSAllRomanInputSourcesLocaleIdentifier</string>
@@ -417,7 +418,7 @@ DQ
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" id="674">
-                                    <rect key="frame" x="0.0" y="0.0" width="1003" height="19"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1003" height="132"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -443,13 +444,12 @@ DQ
                                     </connections>
                                 </tableView>
                             </subviews>
-                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="673">
+                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="673">
                             <rect key="frame" x="-100" y="-100" width="308" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="672">
+                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="672">
                             <rect key="frame" x="224" y="17" width="15" height="102"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
@@ -478,15 +478,15 @@ DQ
                             <action selector="removeButtonClicked:" target="494" id="695"/>
                         </connections>
                     </button>
-                    <box autoresizesSubviews="NO" title="Box" borderType="line" titlePosition="noTitle" id="726">
+                    <box autoresizesSubviews="NO" borderType="line" title="Box" titlePosition="noTitle" id="726">
                         <rect key="frame" x="18" y="340" width="521" height="205"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <view key="contentView" id="h8T-7k-KlJ">
-                            <rect key="frame" x="1" y="1" width="519" height="203"/>
+                            <rect key="frame" x="3" y="3" width="515" height="199"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textField verticalHuggingPriority="750" id="727">
-                                    <rect key="frame" x="16" y="182" width="356" height="14"/>
+                                    <rect key="frame" x="16" y="178" width="352" height="14"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                     <string key="toolTip">Directory on the server where to mount.
 
@@ -498,11 +498,11 @@ It can be either relative to home folder or absolute</string>
                                     </textFieldCell>
                                 </textField>
                                 <textField verticalHuggingPriority="750" id="729">
-                                    <rect key="frame" x="18" y="153" width="483" height="22"/>
+                                    <rect key="frame" x="18" y="149" width="479" height="22"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="730">
                                         <font key="font" metaFont="system"/>
-                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                     <connections>
@@ -511,11 +511,11 @@ It can be either relative to home folder or absolute</string>
                                     </connections>
                                 </textField>
                                 <textField verticalHuggingPriority="750" id="731">
-                                    <rect key="frame" x="18" y="17" width="483" height="22"/>
+                                    <rect key="frame" x="18" y="17" width="479" height="22"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="732">
                                         <font key="font" metaFont="system"/>
-                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                     <connections>
@@ -524,7 +524,7 @@ It can be either relative to home folder or absolute</string>
                                     </connections>
                                 </textField>
                                 <textField verticalHuggingPriority="750" id="733">
-                                    <rect key="frame" x="16" y="44" width="384" height="14"/>
+                                    <rect key="frame" x="16" y="44" width="380" height="14"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                     <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="left" title="Command line options (optional):" id="734">
                                         <font key="font" metaFont="smallSystem"/>
@@ -533,7 +533,7 @@ It can be either relative to home folder or absolute</string>
                                     </textFieldCell>
                                 </textField>
                                 <pathControl verticalHuggingPriority="750" allowsExpansionToolTips="YES" id="r1e-FI-fJ1">
-                                    <rect key="frame" x="18" y="72" width="483" height="20"/>
+                                    <rect key="frame" x="18" y="68" width="479" height="20"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                     <pathCell key="cell" controlSize="small" selectable="YES" editable="YES" alignment="left" id="p7s-x7-SxG">
                                         <font key="font" metaFont="smallSystem"/>
@@ -542,7 +542,7 @@ It can be either relative to home folder or absolute</string>
                                     </pathCell>
                                 </pathControl>
                                 <button verticalHuggingPriority="750" id="Tes-Fh-tal">
-                                    <rect key="frame" x="423" y="117" width="84" height="32"/>
+                                    <rect key="frame" x="419" y="113" width="84" height="32"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                     <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="D7b-Yz-hvR">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -553,7 +553,7 @@ It can be either relative to home folder or absolute</string>
                                     </connections>
                                 </button>
                                 <textField verticalHuggingPriority="750" id="D4F-4K-n1r">
-                                    <rect key="frame" x="16" y="127" width="311" height="14"/>
+                                    <rect key="frame" x="16" y="123" width="307" height="14"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                     <string key="toolTip">Directory on the server where to mount.
 
@@ -565,11 +565,11 @@ It can be either relative to home folder or absolute</string>
                                     </textFieldCell>
                                 </textField>
                                 <textField verticalHuggingPriority="750" id="an7-zB-NsC">
-                                    <rect key="frame" x="18" y="98" width="483" height="22"/>
+                                    <rect key="frame" x="18" y="94" width="479" height="22"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Leave empty for default" drawsBackground="YES" id="fnV-Wc-PDX">
                                         <font key="font" metaFont="system"/>
-                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                     <connections>
@@ -579,8 +579,6 @@ It can be either relative to home folder or absolute</string>
                                 </textField>
                             </subviews>
                         </view>
-                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </box>
                     <textField verticalHuggingPriority="750" id="sQz-H8-fd5">
                         <rect key="frame" x="47" y="618" width="34" height="17"/>
@@ -596,7 +594,7 @@ It can be either relative to home folder or absolute</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="22" drawsBackground="YES" id="dz7-9p-uYz">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
@@ -626,7 +624,7 @@ It can be either relative to home folder or absolute</string>
                     </button>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="159.5" y="449"/>
+            <point key="canvasLocation" x="-169" y="178"/>
         </window>
         <customObject id="494" customClass="SSHFS_GUIAppDelegate">
             <connections>
@@ -652,13 +650,13 @@ It can be either relative to home folder or absolute</string>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
         <userDefaultsController representsSharedInstance="YES" id="555"/>
-        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="594">
+        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="594">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="162" y="710" width="337" height="159"/>
+            <rect key="contentRect" x="162" y="710" width="377" height="159"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
             <view key="contentView" id="595">
-                <rect key="frame" x="0.0" y="0.0" width="337" height="159"/>
+                <rect key="frame" x="0.0" y="0.0" width="377" height="159"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField verticalHuggingPriority="750" id="596">
@@ -671,14 +669,14 @@ It can be either relative to home folder or absolute</string>
                         </textFieldCell>
                     </textField>
                     <popUpButton verticalHuggingPriority="750" id="598">
-                        <rect key="frame" x="168" y="116" width="152" height="26"/>
+                        <rect key="frame" x="168" y="116" width="192" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <popUpButtonCell key="cell" type="push" title="Bundled MacFUSE" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="601" id="599">
+                        <popUpButtonCell key="cell" type="push" title="Bundled FUSE for macOS" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="601" id="599">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="600">
                                 <items>
-                                    <menuItem title="Bundled MacFUSE" state="on" id="601"/>
+                                    <menuItem title="Bundled FUSE for macOS" state="on" id="601"/>
                                     <menuItem title="SSHFS Binary" id="RWs-7C-yFT"/>
                                     <menuItem title="pqrs.org" id="602"/>
                                 </items>
@@ -715,7 +713,7 @@ It can be either relative to home folder or absolute</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="/path/to/sshfs" drawsBackground="YES" id="tft-sl-isB">
                             <font key="font" metaFont="system"/>
-                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                         <connections>
@@ -736,7 +734,7 @@ It can be either relative to home folder or absolute</string>
             <connections>
                 <outlet property="delegate" destination="494" id="p7N-jp-UUy"/>
             </connections>
-            <point key="canvasLocation" x="440.5" y="350.5"/>
+            <point key="canvasLocation" x="672" y="40"/>
         </window>
     </objects>
 </document>
