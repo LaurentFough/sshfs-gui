@@ -3,7 +3,7 @@ SSHFS GUI
 
 Download Installer: https://github.com/LaurentFough/sshfs-gui/raw/Installer/sshfs-gui-1.3_2.dmg
 
-<img src="https://raw.githubusercontent.com/LaurentFough/sshfs-gui/screenshot-1.3_2.png" width="500">
+<img src="https://github.com/LaurentFough/sshfs-gui/blob/master/screenshot-1.3_2.png" width="500">
 
 ### Readme
 
