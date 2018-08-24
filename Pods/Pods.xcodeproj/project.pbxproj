@@ -7,196 +7,220 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		104A47147142209926393D2398253A4B /* IYLoginItem-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C77FAB99A5FD8E273DF5C5931F0CBC /* IYLoginItem-dummy.m */; };
-		12C090D01677D1744B51437FA9416CCB /* NSBundle+LoginItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B43E73CF49D35223D8797EEBA194804 /* NSBundle+LoginItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6B95FE45A2E08094096CC6F8BE3CF13A /* Pods-SSHFS GUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E99E6B02F7AFCD8C77E62514C9BB3E94 /* Pods-SSHFS GUI-dummy.m */; };
-		A9FFB99A829B8FBBE4EEEF2A17B2F406 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602641B6369FF6AAE8CA8DCE78F1C479 /* CoreServices.framework */; };
-		D8AF0B169A829DFA19086015EA66A4E9 /* NSBundle+LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD0C7D9D2A87C70C4191DED6E41AE35 /* NSBundle+LoginItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0F412D29503251C698407F720C69093A /* NSBundle+LoginItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E11C04BCB6ECDAB3D3569AD702115C /* NSBundle+LoginItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		170AB6E9DB568BB3541CF2FFA49E7BAD /* IYLoginItem-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FD704623D01D5766B9E3F84321144A /* IYLoginItem-dummy.m */; };
+		512F004DA64CA61B783F62058BD9B33F /* IYLoginItem-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD97A264342720B2A1FB8A5F1357528 /* IYLoginItem-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54644D3F45A62819B4C92F1E88758D78 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F55352679317AD7019F993EA032C2E /* CoreServices.framework */; };
+		6D45C84F9AF64AC773241424C802C178 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAEF1A521152EE82E247374CC492809 /* Cocoa.framework */; };
+		7743E35D65FED3F35E4B98D3554CDA3D /* Pods-SSHFS GUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 529E2A1D87C012AB5185736A65B4BB29 /* Pods-SSHFS GUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92314CA1C2E84969A4A4BFF852658C0F /* NSBundle+LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B59B5BD69A6BE881CA9509F12CF5B4BB /* NSBundle+LoginItem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B430124340A0BBCC8C13B621330A6452 /* Pods-SSHFS GUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DBF1881A0C0318145B31655D0856AC8 /* Pods-SSHFS GUI-dummy.m */; };
+		DD11CF222684F9DCEAF2D3CAB408DF02 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAEF1A521152EE82E247374CC492809 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8471D670BC74CAB09E249933D85C52D8 /* PBXContainerItemProxy */ = {
+		6782E3CF0C690B304AF3A1364B17B1D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CC6A0F999156846A0B26176F07AEA5BC;
+			remoteGlobalIDString = EA4DA0FC5846AF851EF89DEF9352B919;
 			remoteInfo = IYLoginItem;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B43E73CF49D35223D8797EEBA194804 /* NSBundle+LoginItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+LoginItem.h"; path = "IYLoginItem/NSBundle+LoginItem.h"; sourceTree = "<group>"; };
-		1CD0C7D9D2A87C70C4191DED6E41AE35 /* NSBundle+LoginItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+LoginItem.m"; path = "IYLoginItem/NSBundle+LoginItem.m"; sourceTree = "<group>"; };
-		3F48B24B8C0B907A630833B8D5AC8100 /* Pods-SSHFS GUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSHFS GUI-acknowledgements.markdown"; sourceTree = "<group>"; };
-		602641B6369FF6AAE8CA8DCE78F1C479 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		613891F18BE3480C518DA52AE09DE5B1 /* Pods-SSHFS GUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSHFS GUI-acknowledgements.plist"; sourceTree = "<group>"; };
-		70C77FAB99A5FD8E273DF5C5931F0CBC /* IYLoginItem-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IYLoginItem-dummy.m"; sourceTree = "<group>"; };
-		75014D5A1B5910DE1F368DE8BD9575BA /* libIYLoginItem.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libIYLoginItem.a; path = libIYLoginItem.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		852C03C14F71E8CC46BB50459ED59DDC /* libPods-SSHFS GUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SSHFS GUI.a"; path = "libPods-SSHFS GUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03D5A74500F663255181D2398C2C6732 /* Pods-SSHFS GUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SSHFS GUI.modulemap"; sourceTree = "<group>"; };
+		0F9E38145C392CE2459AC7D5BDAA3F94 /* Pods-SSHFS GUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSHFS GUI.release.xcconfig"; sourceTree = "<group>"; };
+		128A07E2AF089C69947430763D8055EC /* IYLoginItem.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IYLoginItem.modulemap; sourceTree = "<group>"; };
+		18F55352679317AD7019F993EA032C2E /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		255E9288C99DFDF274EC0E2AFAFA96EC /* Pods-SSHFS GUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSHFS GUI-acknowledgements.plist"; sourceTree = "<group>"; };
+		4AD97A264342720B2A1FB8A5F1357528 /* IYLoginItem-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IYLoginItem-umbrella.h"; sourceTree = "<group>"; };
+		529E2A1D87C012AB5185736A65B4BB29 /* Pods-SSHFS GUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSHFS GUI-umbrella.h"; sourceTree = "<group>"; };
+		52FD704623D01D5766B9E3F84321144A /* IYLoginItem-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IYLoginItem-dummy.m"; sourceTree = "<group>"; };
+		57C1132B3BE9C97884F698D5F0701FBA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DBF1881A0C0318145B31655D0856AC8 /* Pods-SSHFS GUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSHFS GUI-dummy.m"; sourceTree = "<group>"; };
+		6BAEB8AAE597760E7B50CFFB9A4BBAEC /* IYLoginItem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IYLoginItem.framework; path = IYLoginItem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		700B0AFF3F22C52A778430B92AAC0D77 /* Pods-SSHFS GUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSHFS GUI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7677AD420E2AAB8A3459519C5ECD6323 /* Pods-SSHFS GUI-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSHFS GUI-frameworks.sh"; sourceTree = "<group>"; };
+		86D648F14FFDD22A4D166E6BE958F617 /* Pods_SSHFS_GUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SSHFS_GUI.framework; path = "Pods-SSHFS GUI.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AA0678AB1663B391C7AEC7EE47FC0CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F17DAE504D142EC3A0E63D385CB8C2C /* Pods-SSHFS GUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSHFS GUI.release.xcconfig"; sourceTree = "<group>"; };
-		A4ABBFC1FDBE83B42844107F85C3FD3A /* Pods-SSHFS GUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSHFS GUI.debug.xcconfig"; sourceTree = "<group>"; };
-		B541A916F58B5571BE4B9C76FEE919C4 /* Pods-SSHFS GUI-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSHFS GUI-resources.sh"; sourceTree = "<group>"; };
-		C4DB9BFC89AD335AE442101801433D0F /* Pods-SSHFS GUI-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSHFS GUI-frameworks.sh"; sourceTree = "<group>"; };
-		D2916DF9C715C1436903C0B09FE38361 /* IYLoginItem.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IYLoginItem.xcconfig; sourceTree = "<group>"; };
-		E99E6B02F7AFCD8C77E62514C9BB3E94 /* Pods-SSHFS GUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSHFS GUI-dummy.m"; sourceTree = "<group>"; };
-		F5423B92D2D03640E517A8CC834B201B /* IYLoginItem-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IYLoginItem-prefix.pch"; sourceTree = "<group>"; };
+		9FAEF1A521152EE82E247374CC492809 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		A07F8E1C9965599C691DCD0FE91BED5A /* IYLoginItem.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IYLoginItem.xcconfig; sourceTree = "<group>"; };
+		A86C8ED45D8B6CC03E1DED71734E950E /* Pods-SSHFS GUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSHFS GUI.debug.xcconfig"; sourceTree = "<group>"; };
+		B59B5BD69A6BE881CA9509F12CF5B4BB /* NSBundle+LoginItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+LoginItem.m"; path = "IYLoginItem/NSBundle+LoginItem.m"; sourceTree = "<group>"; };
+		C01A172D96DC5DCED2644E5220AA03A3 /* IYLoginItem-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IYLoginItem-prefix.pch"; sourceTree = "<group>"; };
+		E8E11C04BCB6ECDAB3D3569AD702115C /* NSBundle+LoginItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+LoginItem.h"; path = "IYLoginItem/NSBundle+LoginItem.h"; sourceTree = "<group>"; };
+		F23EDEB67E6D50383D44545200EAA4B8 /* Pods-SSHFS GUI-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSHFS GUI-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		042780F7B36E814B9BC23B5C4FBC5E13 /* Frameworks */ = {
+		0F23C935F92D576B5D92E573E049779E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9FFB99A829B8FBBE4EEEF2A17B2F406 /* CoreServices.framework in Frameworks */,
+				DD11CF222684F9DCEAF2D3CAB408DF02 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98AB033CAA985126DF655DB5D79B02BC /* Frameworks */ = {
+		C8B1A61211CEF543FC99EF10FACD832D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D45C84F9AF64AC773241424C802C178 /* Cocoa.framework in Frameworks */,
+				54644D3F45A62819B4C92F1E88758D78 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1762E15EA8134542259B55786D9FD43B /* IYLoginItem */ = {
+		25CD861D0629575FB27CD8BAC1D092A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1B43E73CF49D35223D8797EEBA194804 /* NSBundle+LoginItem.h */,
-				1CD0C7D9D2A87C70C4191DED6E41AE35 /* NSBundle+LoginItem.m */,
-				8F5281BCEB8578715CCB772E11D012DF /* Support Files */,
+				6BAEB8AAE597760E7B50CFFB9A4BBAEC /* IYLoginItem.framework */,
+				86D648F14FFDD22A4D166E6BE958F617 /* Pods_SSHFS_GUI.framework */,
 			);
-			name = IYLoginItem;
-			path = IYLoginItem;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
+		28DC0CFBA8E09D9118698D14FBB47478 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F80609EB89F41504928E0E8F252F0119 /* OS X */,
+				8AA0678AB1663B391C7AEC7EE47FC0CB /* Info.plist */,
+				128A07E2AF089C69947430763D8055EC /* IYLoginItem.modulemap */,
+				A07F8E1C9965599C691DCD0FE91BED5A /* IYLoginItem.xcconfig */,
+				52FD704623D01D5766B9E3F84321144A /* IYLoginItem-dummy.m */,
+				C01A172D96DC5DCED2644E5220AA03A3 /* IYLoginItem-prefix.pch */,
+				4AD97A264342720B2A1FB8A5F1357528 /* IYLoginItem-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/IYLoginItem";
+			sourceTree = "<group>";
+		};
+		5510D5B6910399AE51C05803AC6367C5 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				9FAEF1A521152EE82E247374CC492809 /* Cocoa.framework */,
+				18F55352679317AD7019F993EA032C2E /* CoreServices.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		6F2141316DBA3A17EC95751C3B0BAE5F /* Pods-SSHFS GUI */ = {
+			isa = PBXGroup;
+			children = (
+				57C1132B3BE9C97884F698D5F0701FBA /* Info.plist */,
+				03D5A74500F663255181D2398C2C6732 /* Pods-SSHFS GUI.modulemap */,
+				700B0AFF3F22C52A778430B92AAC0D77 /* Pods-SSHFS GUI-acknowledgements.markdown */,
+				255E9288C99DFDF274EC0E2AFAFA96EC /* Pods-SSHFS GUI-acknowledgements.plist */,
+				5DBF1881A0C0318145B31655D0856AC8 /* Pods-SSHFS GUI-dummy.m */,
+				7677AD420E2AAB8A3459519C5ECD6323 /* Pods-SSHFS GUI-frameworks.sh */,
+				F23EDEB67E6D50383D44545200EAA4B8 /* Pods-SSHFS GUI-resources.sh */,
+				529E2A1D87C012AB5185736A65B4BB29 /* Pods-SSHFS GUI-umbrella.h */,
+				A86C8ED45D8B6CC03E1DED71734E950E /* Pods-SSHFS GUI.debug.xcconfig */,
+				0F9E38145C392CE2459AC7D5BDAA3F94 /* Pods-SSHFS GUI.release.xcconfig */,
+			);
+			name = "Pods-SSHFS GUI";
+			path = "Target Support Files/Pods-SSHFS GUI";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */,
 				8BE2C8E6D8DA72F1C2797CF050ABD421 /* Pods */,
-				BE879B24D6AFC3E75F9626760D49017B /* Products */,
-				835719B779698D4DE63F887DD4A823CE /* Targets Support Files */,
+				25CD861D0629575FB27CD8BAC1D092A5 /* Products */,
+				D6E62EA18B3CFA3E81940E24ABFD8322 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		80E82EFE46395A42CB35D11CC871B525 /* Pods-SSHFS GUI */ = {
-			isa = PBXGroup;
-			children = (
-				3F48B24B8C0B907A630833B8D5AC8100 /* Pods-SSHFS GUI-acknowledgements.markdown */,
-				613891F18BE3480C518DA52AE09DE5B1 /* Pods-SSHFS GUI-acknowledgements.plist */,
-				E99E6B02F7AFCD8C77E62514C9BB3E94 /* Pods-SSHFS GUI-dummy.m */,
-				C4DB9BFC89AD335AE442101801433D0F /* Pods-SSHFS GUI-frameworks.sh */,
-				B541A916F58B5571BE4B9C76FEE919C4 /* Pods-SSHFS GUI-resources.sh */,
-				A4ABBFC1FDBE83B42844107F85C3FD3A /* Pods-SSHFS GUI.debug.xcconfig */,
-				9F17DAE504D142EC3A0E63D385CB8C2C /* Pods-SSHFS GUI.release.xcconfig */,
-			);
-			name = "Pods-SSHFS GUI";
-			path = "Target Support Files/Pods-SSHFS GUI";
-			sourceTree = "<group>";
-		};
-		835719B779698D4DE63F887DD4A823CE /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				80E82EFE46395A42CB35D11CC871B525 /* Pods-SSHFS GUI */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		8BE2C8E6D8DA72F1C2797CF050ABD421 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1762E15EA8134542259B55786D9FD43B /* IYLoginItem */,
+				FCBE75AE994D982BD13FC23F017F796B /* IYLoginItem */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		8F5281BCEB8578715CCB772E11D012DF /* Support Files */ = {
+		D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D2916DF9C715C1436903C0B09FE38361 /* IYLoginItem.xcconfig */,
-				70C77FAB99A5FD8E273DF5C5931F0CBC /* IYLoginItem-dummy.m */,
-				F5423B92D2D03640E517A8CC834B201B /* IYLoginItem-prefix.pch */,
+				5510D5B6910399AE51C05803AC6367C5 /* OS X */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/IYLoginItem";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BE879B24D6AFC3E75F9626760D49017B /* Products */ = {
+		D6E62EA18B3CFA3E81940E24ABFD8322 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				75014D5A1B5910DE1F368DE8BD9575BA /* libIYLoginItem.a */,
-				852C03C14F71E8CC46BB50459ED59DDC /* libPods-SSHFS GUI.a */,
+				6F2141316DBA3A17EC95751C3B0BAE5F /* Pods-SSHFS GUI */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F80609EB89F41504928E0E8F252F0119 /* OS X */ = {
+		FCBE75AE994D982BD13FC23F017F796B /* IYLoginItem */ = {
 			isa = PBXGroup;
 			children = (
-				602641B6369FF6AAE8CA8DCE78F1C479 /* CoreServices.framework */,
+				E8E11C04BCB6ECDAB3D3569AD702115C /* NSBundle+LoginItem.h */,
+				B59B5BD69A6BE881CA9509F12CF5B4BB /* NSBundle+LoginItem.m */,
+				28DC0CFBA8E09D9118698D14FBB47478 /* Support Files */,
 			);
-			name = "OS X";
+			name = IYLoginItem;
+			path = IYLoginItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8E5855D448A190D4AE7A42D55F4106AB /* Headers */ = {
+		B43529423E67750767D5A48C43F3FA4A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C090D01677D1744B51437FA9416CCB /* NSBundle+LoginItem.h in Headers */,
+				7743E35D65FED3F35E4B98D3554CDA3D /* Pods-SSHFS GUI-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE3E11ADB51F91520CDECAF399F3A229 /* Headers */ = {
+		B4CF7D6039248265E1C097DC96098219 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				512F004DA64CA61B783F62058BD9B33F /* IYLoginItem-umbrella.h in Headers */,
+				0F412D29503251C698407F720C69093A /* NSBundle+LoginItem.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BD81A12DDB306875EF5DBB753F9D34D8 /* Pods-SSHFS GUI */ = {
+		A9045E4BFB613B45288C54E9DFFF957E /* Pods-SSHFS GUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5CF99B296E25AD111171B4C67D3E3917 /* Build configuration list for PBXNativeTarget "Pods-SSHFS GUI" */;
+			buildConfigurationList = 144C594CB20C43BFC15A2F31A481E0F9 /* Build configuration list for PBXNativeTarget "Pods-SSHFS GUI" */;
 			buildPhases = (
-				EE3E11ADB51F91520CDECAF399F3A229 /* Headers */,
-				DD5E00B96AE6165056A2C8210A24A2FC /* Sources */,
-				98AB033CAA985126DF655DB5D79B02BC /* Frameworks */,
+				B43529423E67750767D5A48C43F3FA4A /* Headers */,
+				E8B9CEE7AD2EA78C6F702A33E9038DC4 /* Sources */,
+				0F23C935F92D576B5D92E573E049779E /* Frameworks */,
+				99B280C07B1EABAB245E91024F1F3BF1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4A5DF47C82E1D89E79B2C223AEE302CC /* PBXTargetDependency */,
+				EF987BE5A27C7125ED0CE6F9DC8E2831 /* PBXTargetDependency */,
 			);
 			name = "Pods-SSHFS GUI";
 			productName = "Pods-SSHFS GUI";
-			productReference = 852C03C14F71E8CC46BB50459ED59DDC /* libPods-SSHFS GUI.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 86D648F14FFDD22A4D166E6BE958F617 /* Pods_SSHFS_GUI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		CC6A0F999156846A0B26176F07AEA5BC /* IYLoginItem */ = {
+		EA4DA0FC5846AF851EF89DEF9352B919 /* IYLoginItem */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B251E3EBE6BD98E09A61A72B39F93AD9 /* Build configuration list for PBXNativeTarget "IYLoginItem" */;
+			buildConfigurationList = 15D32F7EC629A50061A2441B15943E94 /* Build configuration list for PBXNativeTarget "IYLoginItem" */;
 			buildPhases = (
-				8E5855D448A190D4AE7A42D55F4106AB /* Headers */,
-				BA859D05FCFA56A832BA9913355E5D89 /* Sources */,
-				042780F7B36E814B9BC23B5C4FBC5E13 /* Frameworks */,
+				B4CF7D6039248265E1C097DC96098219 /* Headers */,
+				BA2E20294E35906C01DE60D25EC8C57E /* Sources */,
+				C8B1A61211CEF543FC99EF10FACD832D /* Frameworks */,
+				F69BB19B1E0523BB3BD9B3EEA3B308D3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -204,8 +228,8 @@
 			);
 			name = IYLoginItem;
 			productName = IYLoginItem;
-			productReference = 75014D5A1B5910DE1F368DE8BD9575BA /* libIYLoginItem.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 6BAEB8AAE597760E7B50CFFB9A4BBAEC /* IYLoginItem.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -224,92 +248,95 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = BE879B24D6AFC3E75F9626760D49017B /* Products */;
+			productRefGroup = 25CD861D0629575FB27CD8BAC1D092A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC6A0F999156846A0B26176F07AEA5BC /* IYLoginItem */,
-				BD81A12DDB306875EF5DBB753F9D34D8 /* Pods-SSHFS GUI */,
+				EA4DA0FC5846AF851EF89DEF9352B919 /* IYLoginItem */,
+				A9045E4BFB613B45288C54E9DFFF957E /* Pods-SSHFS GUI */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		BA859D05FCFA56A832BA9913355E5D89 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		99B280C07B1EABAB245E91024F1F3BF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				104A47147142209926393D2398253A4B /* IYLoginItem-dummy.m in Sources */,
-				D8AF0B169A829DFA19086015EA66A4E9 /* NSBundle+LoginItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD5E00B96AE6165056A2C8210A24A2FC /* Sources */ = {
+		F69BB19B1E0523BB3BD9B3EEA3B308D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA2E20294E35906C01DE60D25EC8C57E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B95FE45A2E08094096CC6F8BE3CF13A /* Pods-SSHFS GUI-dummy.m in Sources */,
+				170AB6E9DB568BB3541CF2FFA49E7BAD /* IYLoginItem-dummy.m in Sources */,
+				92314CA1C2E84969A4A4BFF852658C0F /* NSBundle+LoginItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B9CEE7AD2EA78C6F702A33E9038DC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B430124340A0BBCC8C13B621330A6452 /* Pods-SSHFS GUI-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4A5DF47C82E1D89E79B2C223AEE302CC /* PBXTargetDependency */ = {
+		EF987BE5A27C7125ED0CE6F9DC8E2831 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IYLoginItem;
-			target = CC6A0F999156846A0B26176F07AEA5BC /* IYLoginItem */;
-			targetProxy = 8471D670BC74CAB09E249933D85C52D8 /* PBXContainerItemProxy */;
+			target = EA4DA0FC5846AF851EF89DEF9352B919 /* IYLoginItem */;
+			targetProxy = 6782E3CF0C690B304AF3A1364B17B1D6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		472462A4B12D36FAAD6FD36DA00101B5 /* Release */ = {
+		037AD7DF4E1B2837C2C11094E68479E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2916DF9C715C1436903C0B09FE38361 /* IYLoginItem.xcconfig */;
+			baseConfigurationReference = A07F8E1C9965599C691DCD0FE91BED5A /* IYLoginItem.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
 				GCC_PREFIX_HEADER = "Target Support Files/IYLoginItem/IYLoginItem-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IYLoginItem/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
+				MODULEMAP_FILE = "Target Support Files/IYLoginItem/IYLoginItem.modulemap";
 				PRODUCT_MODULE_NAME = IYLoginItem;
 				PRODUCT_NAME = IYLoginItem;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		7752FD96E61E76D33B6ACDEA8E3470AA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F17DAE504D142EC3A0E63D385CB8C2C /* Pods-SSHFS GUI.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
+			name = Debug;
 		};
 		A656DD5A88B359E0B024B9D0AE09DB10 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -367,6 +394,39 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C0AA85441958CFCA8117B6FA491DFD0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A07F8E1C9965599C691DCD0FE91BED5A /* IYLoginItem.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/IYLoginItem/IYLoginItem-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IYLoginItem/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/IYLoginItem/IYLoginItem.modulemap";
+				PRODUCT_MODULE_NAME = IYLoginItem;
+				PRODUCT_NAME = IYLoginItem;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -434,79 +494,102 @@
 			};
 			name = Debug;
 		};
-		FA2AB7E43C86F3302873B2DA6BEB7A91 /* Debug */ = {
+		C621039143169F375C73E8F3FF2CCFBC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4ABBFC1FDBE83B42844107F85C3FD3A /* Pods-SSHFS GUI.debug.xcconfig */;
+			baseConfigurationReference = 0F9E38145C392CE2459AC7D5BDAA3F94 /* Pods-SSHFS GUI.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-SSHFS GUI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-SSHFS GUI/Pods-SSHFS GUI.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		FF22BC1EAA740CFCD9286C1E8CC51885 /* Debug */ = {
+		FF0095FF032C3DE63465CC36473D8BEB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2916DF9C715C1436903C0B09FE38361 /* IYLoginItem.xcconfig */;
+			baseConfigurationReference = A86C8ED45D8B6CC03E1DED71734E950E /* Pods-SSHFS GUI.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				GCC_PREFIX_HEADER = "Target Support Files/IYLoginItem/IYLoginItem-prefix.pch";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-SSHFS GUI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-SSHFS GUI/Pods-SSHFS GUI.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = IYLoginItem;
-				PRODUCT_NAME = IYLoginItem;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		144C594CB20C43BFC15A2F31A481E0F9 /* Build configuration list for PBXNativeTarget "Pods-SSHFS GUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF0095FF032C3DE63465CC36473D8BEB /* Debug */,
+				C621039143169F375C73E8F3FF2CCFBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15D32F7EC629A50061A2441B15943E94 /* Build configuration list for PBXNativeTarget "IYLoginItem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				037AD7DF4E1B2837C2C11094E68479E3 /* Debug */,
+				C0AA85441958CFCA8117B6FA491DFD0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C1500EF530ED681C83DE300ED582623C /* Debug */,
 				A656DD5A88B359E0B024B9D0AE09DB10 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5CF99B296E25AD111171B4C67D3E3917 /* Build configuration list for PBXNativeTarget "Pods-SSHFS GUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FA2AB7E43C86F3302873B2DA6BEB7A91 /* Debug */,
-				7752FD96E61E76D33B6ACDEA8E3470AA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B251E3EBE6BD98E09A61A72B39F93AD9 /* Build configuration list for PBXNativeTarget "IYLoginItem" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FF22BC1EAA740CFCD9286C1E8CC51885 /* Debug */,
-				472462A4B12D36FAAD6FD36DA00101B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -14,10 +14,10 @@
 		5B5CBD7210FB267000BD468E /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5B5CBD7110FB267000BD468E /* icon.icns */; };
 		5B6F95A21647C52F007FE8DC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6F95A11647C52F007FE8DC /* Security.framework */; };
 		5BCBED11111A0D1C00C93ECC /* sshfs-static-leopard in Resources */ = {isa = PBXBuildFile; fileRef = 5BCBED10111A0D1C00C93ECC /* sshfs-static-leopard */; };
+		66B27865A7C81D2DC9AD9C46 /* Pods_SSHFS_GUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B9497C277F029B52DB9ED0 /* Pods_SSHFS_GUI.framework */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		E5D903F6DD232C1A842AE2C6 /* libPods-SSHFS GUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA941A82F2846DA9CD030DBC /* libPods-SSHFS GUI.a */; };
 		ECCD141A19C08D0900B651C8 /* ReadonlyTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCD141919C08D0900B651C8 /* ReadonlyTextFieldCell.m */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +44,7 @@
 		873A225F34895AD36B99927E /* Pods-SSHFS GUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSHFS GUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSHFS GUI/Pods-SSHFS GUI.release.xcconfig"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SSHFS_GUI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SSHFS_GUI-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* SSHFS GUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SSHFS GUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA941A82F2846DA9CD030DBC /* libPods-SSHFS GUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SSHFS GUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B9497C277F029B52DB9ED0 /* Pods_SSHFS_GUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSHFS_GUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCD141819C08D0900B651C8 /* ReadonlyTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadonlyTextFieldCell.h; sourceTree = "<group>"; };
 		ECCD141919C08D0900B651C8 /* ReadonlyTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadonlyTextFieldCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,7 +56,7 @@
 			files = (
 				5B6F95A21647C52F007FE8DC /* Security.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				E5D903F6DD232C1A842AE2C6 /* libPods-SSHFS GUI.a in Frameworks */,
+				66B27865A7C81D2DC9AD9C46 /* Pods_SSHFS_GUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +154,7 @@
 			children = (
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
-				BA941A82F2846DA9CD030DBC /* libPods-SSHFS GUI.a */,
+				B0B9497C277F029B52DB9ED0 /* Pods_SSHFS_GUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,6 +171,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				41ABFCE25C3E9A4C60CD03D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,6 +230,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		41ABFCE25C3E9A4C60CD03D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SSHFS GUI/Pods-SSHFS GUI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IYLoginItem/IYLoginItem.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IYLoginItem.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSHFS GUI/Pods-SSHFS GUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		49249B632214F36A9EA22C23 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

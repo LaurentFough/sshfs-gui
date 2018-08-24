@@ -358,7 +358,7 @@ DQ
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField toolTip="To connect to a custom port, add &quot;:port_number&quot; at the end. For example, &quot;datapoliten.ru:22&quot;" verticalHuggingPriority="750" id="542">
+                    <textField toolTip="To connect to a custom port, add &quot;:port_number&quot; at the end. For example, &quot;hostname:2200&quot;" verticalHuggingPriority="750" id="542">
                         <rect key="frame" x="90" y="642" width="445" height="22"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="hostname" drawsBackground="YES" id="543">
