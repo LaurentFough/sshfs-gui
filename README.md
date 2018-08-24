@@ -1,9 +1,9 @@
 SSHFS GUI
 =========
 
-Download Installer: https://github.com/dstuecken/sshfs-gui/raw/develop/Installer/sshfs-gui-1.3.1.dmg
+Download Installer: https://github.com/LaurentFough/sshfs-gui/raw/develop/Installer/sshfs-gui-1.3_2.dmg
 
-<img src="https://raw.githubusercontent.com/dstuecken/sshfs-gui/develop/screenshot.png" width="500">
+<img src="https://raw.githubusercontent.com/LaurentFough/sshfs-gui/develop/screenshot.png" width="500">
 
 ### Readme
 
