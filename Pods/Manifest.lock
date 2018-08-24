@@ -1,0 +1,16 @@
+PODS:
+  - IYLoginItem (0.1)
+
+DEPENDENCIES:
+  - IYLoginItem
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IYLoginItem
+
+SPEC CHECKSUMS:
+  IYLoginItem: e57a86b39d3b9ab0e2fc033adedae01efafd9adf
+
+PODFILE CHECKSUM: acda8162a7c5900fffe031d5a8eb6b1cef9c6d25
+
+COCOAPODS: 1.5.3

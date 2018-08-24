@@ -17,6 +17,7 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		E5D903F6DD232C1A842AE2C6 /* libPods-SSHFS GUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA941A82F2846DA9CD030DBC /* libPods-SSHFS GUI.a */; };
 		ECCD141A19C08D0900B651C8 /* ReadonlyTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCD141919C08D0900B651C8 /* ReadonlyTextFieldCell.m */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +40,11 @@
 		5B5CBD7110FB267000BD468E /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		5B6F95A11647C52F007FE8DC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5BCBED10111A0D1C00C93ECC /* sshfs-static-leopard */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "sshfs-static-leopard"; sourceTree = "<group>"; };
+		786A77BB6059C5B1C0AEDF5F /* Pods-SSHFS GUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSHFS GUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSHFS GUI/Pods-SSHFS GUI.debug.xcconfig"; sourceTree = "<group>"; };
+		873A225F34895AD36B99927E /* Pods-SSHFS GUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSHFS GUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSHFS GUI/Pods-SSHFS GUI.release.xcconfig"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SSHFS_GUI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SSHFS_GUI-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* SSHFS GUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SSHFS GUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA941A82F2846DA9CD030DBC /* libPods-SSHFS GUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SSHFS GUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCD141819C08D0900B651C8 /* ReadonlyTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadonlyTextFieldCell.h; sourceTree = "<group>"; };
 		ECCD141919C08D0900B651C8 /* ReadonlyTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadonlyTextFieldCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,6 +56,7 @@
 			files = (
 				5B6F95A21647C52F007FE8DC /* Security.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				E5D903F6DD232C1A842AE2C6 /* libPods-SSHFS GUI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +94,15 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
+		14A11F1D47C7AEDD1DC37308 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				786A77BB6059C5B1C0AEDF5F /* Pods-SSHFS GUI.debug.xcconfig */,
+				873A225F34895AD36B99927E /* Pods-SSHFS GUI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +111,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* SSHFS GUI */ = {
+		29B97314FDCFA39411CA2CEA = {
 			isa = PBXGroup;
 			children = (
 				5B6F95A11647C52F007FE8DC /* Security.framework */,
@@ -106,6 +120,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				14A11F1D47C7AEDD1DC37308 /* Pods */,
 			);
 			name = "SSHFS GUI";
 			sourceTree = "<group>";
@@ -139,6 +154,7 @@
 			children = (
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				BA941A82F2846DA9CD030DBC /* libPods-SSHFS GUI.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -150,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SSHFS GUI" */;
 			buildPhases = (
+				49249B632214F36A9EA22C23 /* [CP] Check Pods Manifest.lock */,
 				5B594A4810FF99F100316BCB /* Compile asker */,
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
@@ -186,7 +203,8 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA /* SSHFS GUI */;
+			mainGroup = 29B97314FDCFA39411CA2CEA;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -211,6 +229,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		49249B632214F36A9EA22C23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSHFS GUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5B594A4810FF99F100316BCB /* Compile asker */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +305,7 @@
 /* Begin XCBuildConfiguration section */
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 786A77BB6059C5B1C0AEDF5F /* Pods-SSHFS GUI.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -290,6 +331,7 @@
 		};
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 873A225F34895AD36B99927E /* Pods-SSHFS GUI.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
